@@ -30,6 +30,24 @@ class FashionwebscrapingSpiderMiddleware(object):
     def process_spider_output(self, response, result, spider):
         # Called with the results returned from the Spider, after
         # it has processed the response.
+        
+        
+        
+        int num = 29;
+        boolean flag = false;
+        for(int i = 2; i <= num/2; ++i)
+        {
+            if(num % i == 0)
+            {
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
 
         # Must return an iterable of Request, dict or Item objects.
         for i in result:
